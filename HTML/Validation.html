@@ -1,0 +1,52 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validation</title>
+</head>
+<body>
+    <div>
+        <p><b>Registration form</b></p>
+        <br>
+        <label for="">E-mail:</label>
+        <input type="email" required>
+        <br><br>
+        <label for="">Password:</label>
+        <input type="password" name="" id="" min="8" max="16" required>
+        <br><br>
+        <label for="">Name and Lastname:</label>
+        <input type="text" name="" id="" required>
+        <br><br>
+        <label for="">Date of birth:</label>
+        <input type="date" name="" id="" required>
+        <br><br>
+        <label for="">Telephone number:</label>
+        <input type="number" name="phoneno" id="" placeholder="(5__)(_______)" required>
+        <br><br>
+        <label for="">Plans:</label>
+        <select name="" id="" required>
+            <option value="">Free</option>
+            <optgroup label="Monthly"></optgroup>
+                <option value="">19.99$</option>
+                <option value="">29.99$</option>
+                <option value="">35.99$</option>
+        </select>
+        <input type="checkbox" name="plans" id="">
+        <label for="">Pro Plan</label>
+        <br><br>
+        <label for="">Credit Card:</label>
+        <input type="text" name="creditcard" id="" maxlength="16" pattern="[0,9]{16}" placeholder="Enter your credit card number" required>
+        <br>
+        <label for="">CVC:</label>
+        <input type="text" name="" id="" maxlength="3" pattern="[0,9]{3}" required>
+        <br>
+        <label for="">Expiration date:</label>
+        <input type="text" placeholder="__/__" required>
+        <br><br>
+        <label for="">Billing Address:</label>
+        <textarea name="Address" id="" cols="30" rows="10" required></textarea>
+        <br>
+        <input type="submit">    
+    </div>
+</body>
+</html>
