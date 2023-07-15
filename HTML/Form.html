@@ -24,10 +24,13 @@
         <input type="number" name="phoneno" id="" placeholder="(5__)(_______)" required>
         <br><br>
         <label for="">Plans:</label>
-        <input type="checkbox" name="plans" id="">
-        <label for="">Free plan</label>
-        <input type="checkbox" name="plans" id="">
-        <label for="">A group of 3 plans with increasing price</label>
+        <select name="" id="">
+            <option value="">Free</option>
+            <optgroup label="Monthly"></optgroup>
+                <option value="">19.99$</option>
+                <option value="">29.99$</option>
+                <option value="">35.99$</option>
+        </select>
         <input type="checkbox" name="plans" id="">
         <label for="">Pro Plan</label>
         <br><br>
@@ -41,7 +44,9 @@
         <input type="text" placeholder="__/__">
         <br><br>
         <label for="">Billing Address:</label>
-        <textarea name="Address" id="" cols="30" rows="10"></textarea>    
+        <textarea name="Address" id="" cols="30" rows="10"></textarea>
+        <br>
+        <input type="submit">    
     </div>
 </body>
 </html>
