@@ -24,7 +24,7 @@
         <input type="number" name="phoneno" id="" placeholder="(5__)(_______)" required>
         <br><br>
         <label for="">Plans:</label>
-        <select name="" id="">
+        <select name="" id="" required>
             <option value="">Free</option>
             <optgroup label="Monthly"></optgroup>
                 <option value="">19.99$</option>
@@ -38,13 +38,13 @@
         <input type="text" name="creditcard" id="" pattern="[0,9]{16}" placeholder="Enter your credit card number" required>
         <br>
         <label for="">CVC:</label>
-        <input type="text" name="" id="" pattern="[0,9]{3}">
+        <input type="text" name="" id="" pattern="[0,9]{3}" required>
         <br>
         <label for="">Expiration date:</label>
-        <input type="text" placeholder="__/__">
+        <input type="text" placeholder="__/__" required>
         <br><br>
         <label for="">Billing Address:</label>
-        <textarea name="Address" id="" cols="30" rows="10"></textarea>
+        <textarea name="Address" id="" cols="30" rows="10" required></textarea>
         <br>
         <input type="submit">    
     </div>
