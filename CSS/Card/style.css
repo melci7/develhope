@@ -1,0 +1,28 @@
+img {
+    border: 1px solid gray;
+    width: 330px;
+    height: 330px;
+    background-color: gray;
+}
+
+.description {
+    width: 300;
+    border: 1px solid gray;
+    background-color: rgb(104, 157, 238);
+    padding: 15px;
+}
+
+.skills {
+    width: 300;
+    border: 1px solid gray;
+    background-color: darkorange;
+    padding: 15px;
+}
+
+footer {
+    width: 300;
+    border: 1px solid gray;
+    background-color: rgb(102, 255, 0);
+    height: 30px;
+    padding: 15px;
+}
