@@ -1,0 +1,27 @@
+.sb-container {
+    display: flex;
+    background-color: bisque;
+    width: 200px;
+    height: 100%;
+    margin: auto;
+    flex-direction: column;
+}
+.links {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.links > a{
+    color:#2b2b2b;
+}
+.links > a:hover {
+    color: #2b2bb2;
+    transition: 0.3s;
+}
+.avatar {
+    gap: 5px;
+    margin-block-start: auto;
+    display: flex;
+    justify-content: center;
+}
