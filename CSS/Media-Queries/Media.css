@@ -1,0 +1,123 @@
+* {
+    font-family: 'Inter', sans-serif;
+}
+html {
+    width: 100vw;
+    
+}
+body {
+    width: 100vw;
+    margin: 0px;
+    padding: 0px;
+}
+.container {
+    
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    max-width: 1300px;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+.row1 {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid gray;
+    border-radius: 30px;
+    background-color: rgba(206, 202, 202, 0.767);
+    gap: 10px;
+}
+img {
+    width: 100%;   
+}
+.avatar > i{
+    font-size: 3vw;    
+}
+.name {
+    vertical-align: top;
+    font-size: 1vw;
+}
+.date {
+    font-size: 0.75vw;
+    color: rgba(255, 255, 255, 0.87);
+    margin-left: -5.5vw;
+}
+#cat2 {
+    color: gray;
+}
+#cat3{
+    color: orange;
+}
+.icons {
+    margin-left: 20px;
+    margin-top: 15px;
+    font-size: 1.5em;
+    color: rgb(34, 44, 128);
+}
+.text {
+    margin-bottom: 30px;
+    margin-left: 10px;
+}
+#button {
+    vertical-align: super;
+    margin-left: 11vw;
+    font-size: 1.75vw;
+}
+.avatar {
+    margin-top: 10px;
+}
+@media (max-width:375px) {
+    .container {
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    .avatar > i{
+        font-size: 15vw;    
+    }
+    #button {
+        vertical-align: super;
+        margin-left: 88vw;
+        font-size: 10vw;
+        margin-top: -12vw;
+    }
+    .name {
+        
+        font-size: 5vw;
+    }
+    .date {
+
+        font-size: 4vw;
+        color: rgba(255, 255, 255, 0.87);
+        margin-left: -28vw;
+    }
+}
+@media (max-width:768px) {
+    .container {
+        width: 100%;
+        flex-wrap: wrap;
+        margin: 15px;
+        gap: 10px;
+    }
+    .row1 {
+        width: 47%;
+    }
+    
+    .avatar > i{
+        font-size: 8vw;    
+    }
+    .name {
+        vertical-align: top;
+        font-size: 3vw;
+    }
+    .date {
+        font-size: 2.5vw;
+        color: rgba(255, 255, 255, 0.87);
+        margin-left: -17vw;
+    }
+    #button {
+        vertical-align: super;
+        margin-left: 17vw;
+        font-size: 5vw;
+    }
+}
