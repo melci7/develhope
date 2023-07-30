@@ -1,0 +1,63 @@
+.navbar {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(7, 9, 26);
+    
+}
+.search:hover {
+    background-color: green;
+    color: white;
+}
+img {
+    width: 300px;
+    height: 300px;
+}
+.hamburger {
+    display: none;
+}
+li {
+    display: flex;
+    gap: 10px;
+    list-style: none;
+    align-items: center;
+}
+.navbar1 {
+    font-size: larger;
+    color: white;
+    
+}
+.home {
+    
+    color: white;
+}
+.link {
+    
+    color: rgb(170, 168, 168);
+}
+.dropdown {
+    
+    color: rgb(170, 168, 168);
+}
+.disabled {
+    
+   
+    color: rgb(121, 121, 121);
+}
+a {
+    text-decoration: none;
+}
+.text {
+    border-radius: 6px;
+    height: 30px;
+    margin-left: 50px;
+}
+.search {
+    display: flex;
+    height: 27px;
+    width: 60px;
+    border: 1px solid green;
+    border-radius: 2px;
+    color: green;
+    align-items: center;
+    
+}
