@@ -1,0 +1,50 @@
+.text, .exercise4 h2, .exercise4 h1 {
+  text-align: center;
+  color: green;
+  text-decoration: underline;
+  text-decoration-color: blue;
+  text-decoration-thickness: 2px;
+}
+
+.exercise4 {
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid red;
+}
+.exercise4 h2 {
+  padding: 1rem;
+  border: 1px solid red;
+  color: green;
+  font-size: 24;
+  margin-inline: auto;
+}
+.exercise4 section {
+  margin: 1rem;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+}
+.exercise4 article .red {
+  padding: 20px;
+  border: 1px solid green;
+  color: red;
+  font-size: 1rem;
+}
+.exercise4 article .blue {
+  padding: 20px;
+  border: 1px solid green;
+  color: blue;
+  font-size: 1rem;
+}
+.exercise4 .last {
+  padding: 20px;
+  border: 1px solid blue;
+  color: green;
+  font-size: 1.5rem;
+  display: flex;
+  flex: auto;
+  justify-content: center;
+}
+
+/*# sourceMappingURL=exercise4.css.map */

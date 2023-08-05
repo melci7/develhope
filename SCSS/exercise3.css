@@ -1,0 +1,42 @@
+.exercise3 {
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid red;
+}
+.exercise3 h1 {
+  text-align: center;
+  color: green;
+  text-decoration: underline;
+  text-decoration-color: blue;
+  text-decoration-thickness: 2px;
+}
+.exercise3 section {
+  margin: 1rem;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+}
+.exercise3 article .red {
+  padding: 20px;
+  border: 1px solid green;
+  color: red;
+  font-size: 1rem;
+}
+.exercise3 article .blue {
+  padding: 20px;
+  border: 1px solid green;
+  color: blue;
+  font-size: 1rem;
+}
+.exercise3 .last {
+  padding: 20px;
+  border: 1px solid blue;
+  color: green;
+  font-size: 1.5rem;
+  display: flex;
+  flex: auto;
+  justify-content: center;
+}
+
+/*# sourceMappingURL=exercise3.css.map */

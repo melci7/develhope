@@ -1,0 +1,31 @@
+$blue: blue;
+$red: red;
+$green: green;
+
+.exercise {
+    margin: 1rem;
+    border: 1px solid $red;
+    height: 13rem;
+    h1 {
+        text-align: center;
+        color: $green;
+        text-decoration: underline;
+        text-decoration-color: $blue;
+        text-decoration-thickness: 2px;
+    }
+    section {
+        margin: 1rem;
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+    }
+    article {
+        border: 1px solid $green;
+        .blue {
+            color: $blue;
+        }
+        .red {
+            color: $red;
+        }
+    }
+}

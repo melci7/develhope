@@ -1,0 +1,72 @@
+@use "sass:color";
+
+@function rem($px) {
+    @return calc($px / 16) + rem;
+}
+
+@mixin article-card($color, $bordercolor, $fontsize: rem(16)) {
+    border: 1px solid $bordercolor;
+    color: $color;
+    font-size: $fontsize;
+}
+@mixin exercise($margin: 1rem, $display: flex, $flex-direction:column, $border: 1px solid red) {
+    margin: $margin;
+    display: $display;
+    flex-direction: $flex-direction;
+    border: $border;
+}
+@mixin h1($text-align: center, $color: green, $text-decoration: underline, $text-decoration-color: blue, $text-decoration-thickness: 2px) {
+    text-align: $text-align;
+    color: $color;
+    text-decoration: $text-decoration;
+    text-decoration-color: $text-decoration-color;
+    text-decoration-thickness: $text-decoration-thickness;
+}
+@mixin section($margin: 1rem, $display: flex, $flex-direction: row, $text-align: center) {
+    margin: $margin;
+    display: $display;
+    flex-direction: $flex-direction;
+    text-align: $text-align;
+}
+.text {
+    text-align: center;
+    color: green;
+    text-decoration: underline;
+    text-decoration-color: blue;
+    text-decoration-thickness: 2px;
+}
+.exercise4 {
+    @include exercise();
+    h1 {
+        @extend .text;
+        
+    } 
+    h2 {
+        @extend .text;
+        padding: rem(16);
+        @include article-card(green,red ,24);
+        margin-inline: auto;
+    }
+    section {
+        @include section();
+    }
+    article {
+        .red {
+            padding: 20px;
+            @include article-card(red, green)
+        }
+        .blue {
+            padding: 20px;
+            @include article-card(blue, green)
+        }
+        
+    }
+    .last {
+        padding: 20px;
+        @include article-card(green, blue, rem(24));
+        display: flex;
+        flex: auto;
+        justify-content: center;
+    }
+}
+
