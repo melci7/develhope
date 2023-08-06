@@ -1,0 +1,108 @@
+@use "sass:color";
+
+$lightness: +10%;
+$white: white;
+$black: black;
+@function rem($px) {
+    @return calc($px / 16) + rem;
+}
+
+@mixin article-card($color, $bordercolor, $fontsize: rem(16)) {
+    border: 1px solid $bordercolor;
+    color: $color;
+    font-size: $fontsize;
+}
+@mixin exercise($margin: 1rem, $display: flex, $flex-direction:column, $border: 1px solid red) {
+    margin: $margin;
+    display: $display;
+    flex-direction: $flex-direction;
+    border: $border;
+}
+@mixin h1($text-align: center, $color: green, $text-decoration: underline, $text-decoration-color: blue, $text-decoration-thickness: 2px) {
+    text-align: $text-align;
+    color: $color;
+    text-decoration: $text-decoration;
+    text-decoration-color: $text-decoration-color;
+    text-decoration-thickness: $text-decoration-thickness;
+}
+@mixin section($margin: 1rem, $display: flex, $flex-direction: row, $text-align: center) {
+    margin: $margin;
+    display: $display;
+    flex-direction: $flex-direction;
+    text-align: $text-align;
+}
+.text {
+    text-align: center;
+    color: green;
+    text-decoration: underline;
+    text-decoration-color: blue;
+    text-decoration-thickness: 2px;
+}
+body {
+    background-color: rgb(51, 49, 49);
+}
+.exercise5 {
+    
+    @include exercise();
+    h1 {
+        @extend .text;
+        
+    } 
+    h2 {
+        @extend .text;
+        padding: rem(16);
+        @include article-card(green,red ,24);
+        margin-inline: auto;
+    }
+    section {
+        @include section();
+    }
+    article {
+        .red {
+            padding: 20px;
+            @include article-card(red, green)
+        }
+        .blue {
+            padding: 20px;
+            @include article-card(blue, green)
+        }
+        
+    }
+    .last {
+        padding: 20px;
+        @include article-card(green, blue, rem(24));
+        display: flex;
+        flex: auto;
+        justify-content: center;
+    }
+    .square {
+        @for $var from 1 to 20 {
+            .fs-#{$var}rem {
+                display: flex;
+                align-items: flex-start;
+                background-color: darken($white, $var * 5%);
+                color: lighten($black, $var * 5%);
+                margin-left: 50px;
+                height: 45px;
+                width: 45px;
+                border: 1px solid red;
+                $lightness: $lightness + 10%;
+                @if $var == 10 {
+                    text-align: center;
+                    background-color: blue;
+                    color: red;
+                    font-size: 2rem;
+                }
+                @if $var % 3 == 0 {
+                    font-size: 3rem;
+                }
+                @if $var == 2 or $var == 5 or $var == 7 or $var == 13 or $var == 16 or $var == 19{
+                    font-size: 2rem;
+                }
+            }
+            
+        }
+    }
+}
+
+
