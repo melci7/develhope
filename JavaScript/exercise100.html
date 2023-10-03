@@ -20,8 +20,11 @@
 </html>
 
 <script>
-  const getData = document.querySelectorAll(".form-input");
+  const getData = document.querySelectorAll("input");
+  
   getData.forEach(data => {
-    console.log(data.value);
+    if (data.type == "text") {
+      console.log(data.value);
+    }
   })
 </script>
