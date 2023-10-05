@@ -1,9 +1,9 @@
 
-function Welcome({ nameValue }) {
+function Welcome({ a, b }) {
   
   return (
     <>
-      <h1>Hello, {nameValue}</h1>
+      <h2>Sum of a and b: {a + b}</h2>
     </>
   )
 }
