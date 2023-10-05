@@ -1,9 +1,17 @@
-function Hello() {
-  
+function App() {
+
+    function Hello() {
+        return (
+            <>
+                <h2>Hello, World!</h2>
+            </>
+        )
+    }
     return (
       <>
-        <h2>Hello, World!</h2>
+        <div><Hello /></div>
       </>
     )
+    
   }
-export default Hello
+export default App
