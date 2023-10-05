@@ -6,6 +6,7 @@ const root = createRoot(document.getElementById('root'))
 
 root.render(
   <React.StrictMode>
-    <Welcome nameValue={"Muhammed"}/>
+    {/* It just displays the "Hello," */}
+    <Welcome/>
   </React.StrictMode>,
 )
