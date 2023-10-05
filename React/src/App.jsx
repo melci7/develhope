@@ -1,6 +1,7 @@
 function App() {
 
-    function Welcome({ nameValue }) {
+    {/* We can give default value to the variable like this. */}
+    function Welcome({ nameValue="Muhammed" }) {
         return (
             <>
                 <p>Welcome, {nameValue}!</p>
@@ -9,7 +10,8 @@ function App() {
     }
     return (
       <>
-        <div><Welcome nameValue={"Muhammed"}/></div>
+        {/* If there's no value in the component it just display "Welcome, !" */}
+        <div><Welcome /></div>
       </>
     )
     
