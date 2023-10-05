@@ -1,24 +1,15 @@
 function App() {
 
-    function Hello() {
+    function Welcome({ nameValue }) {
         return (
             <>
-                <h2>Hello, World!</h2>
-                <Message />
+                <p>Welcome, {nameValue}!</p>
             </>
         )
-        function Message() {
-            return (
-                <>
-                    <p>What a beautiful day!</p>
-                </>
-            )
-        }
     }
     return (
       <>
-        {/* Because of my Message component inside the Hello component, It's not displaying the message. */}
-        <div><Message /></div>
+        <div><Welcome nameValue={"Muhammed"}/></div>
       </>
     )
     
