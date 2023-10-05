@@ -1,6 +1,6 @@
 function App() {
 
-    {/* We can give default value to the variable like this. */}
+    
     function Welcome({ nameValue, age }) {
         return (
             <>
@@ -11,8 +11,8 @@ function App() {
     }
     return (
       <>
-        {/* If there's no value in the component it just display "Welcome, !" */}
-        <div><Welcome nameValue="Muhammed" age={24}/></div>
+        {/* JSX Expressions works too as a value */}
+        <div><Welcome nameValue={<strong>Muhammed</strong>} age={24}/></div>
       </>
     )
     
