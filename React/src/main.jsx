@@ -6,7 +6,7 @@ const root = createRoot(document.getElementById('root'))
 
 root.render(
   <React.StrictMode>
-    {/* It just displays the "Hello," */}
-    <Welcome/>
+    {/* As I understand; JSX Expressions too works as a value" */}
+    <Welcome nameValue={<p>JSX Expression</p>}/>
   </React.StrictMode>,
 )
