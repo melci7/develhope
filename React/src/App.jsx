@@ -17,7 +17,8 @@ function App() {
     }
     return (
       <>
-        <div><Hello /></div>
+        {/* Displayed according to how many times the component has been called */}
+        <div><Hello /> <Hello /></div>
       </>
     )
     
