@@ -17,8 +17,8 @@ function App() {
     }
     return (
       <>
-        {/* Displayed according to how many times the component has been called */}
-        <div><Hello /> <Hello /></div>
+        {/* Because of my Message component inside the Hello component, It's not displaying the message. */}
+        <div><Message /></div>
       </>
     )
     
