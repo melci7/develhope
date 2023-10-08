@@ -1,12 +1,12 @@
 import AlertClock from "./AlertClock"
+import Counter from "./Counter"
 import Welcome from "./Welcome"
 
 function App() {
 
     return (
       <>
-        <div><Welcome nameValue={"John"}/></div>
-        <AlertClock />
+        <Counter initialValue={10} incrementAmount={2}/>
       </>
     )
     
