@@ -1,13 +1,13 @@
 import Age from "./Age"
 
 function Welcome({ nameValue }) {
-    
-    const userAge = 20;
+
+    const userAge = null;
     return (
         <>
             <p>Welcome, {nameValue}!</p>
-            {userAge > 18 && <Age age={userAge} />}
-            
+            {!!userAge && <Age age={userAge} />}
+            {userAge === 0 && <Age age={userAge} />}
         </>
     )
 }
