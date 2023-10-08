@@ -1,11 +1,7 @@
-function AlertClock() {
-    function currentTime() {
-        const time = new Date()
-        alert(time.toLocaleTimeString())
-    }
+function AlertClock({ handleTime }) {
     
     return (
-        <button onClick={currentTime}>Click</button>
+        <button onClick={handleTime}>Click</button>
     )
 }
 
