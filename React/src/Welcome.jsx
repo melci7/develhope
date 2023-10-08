@@ -6,7 +6,7 @@ function Welcome({ nameValue }) {
     return (
         <>
             <p>Welcome, {nameValue}!</p>
-            {(userAge > 18 && userAge < 65) && <Age age={userAge} />}
+            {(userAge > 18 && userAge < 65 && nameValue === "John") && <Age age={userAge} />}
             
         </>
     )

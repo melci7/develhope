@@ -4,7 +4,7 @@ function App() {
 
     return (
       <>
-        <div><Welcome nameValue={<strong>Muhammed</strong>}/></div>
+        <div><Welcome nameValue={"John"}/></div>
       </>
     )
     
