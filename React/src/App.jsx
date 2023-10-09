@@ -1,12 +1,12 @@
 import AlertClock from "./AlertClock"
+import Clock from "./Clock"
 import Welcome from "./Welcome"
 
 function App() {
 
     return (
       <>
-        <div><Welcome nameValue={"John"}/></div>
-        <AlertClock />
+        <Clock />
       </>
     )
     
