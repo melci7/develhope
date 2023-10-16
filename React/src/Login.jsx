@@ -20,7 +20,10 @@ function Login() {
                 [name]: type === "checkbox" ? checked : value,
             }
         })
-        console.log(data)
+    }
+    // I didn't understand the "When clicked, the event handler attached to the button should call an onLogin function passed as a prop to the Login component, passing it the state."
+    function handleLogin(event) {
+        event.preventDefault()
     }
     return (
         <div>
@@ -28,6 +31,7 @@ function Login() {
                 <input type="text" name="username" value={data.username} onChange={handleData}/>
                 <input type="password" name="password" value={data.password} onChange={handleData}/>
                 <input type="checkbox" name="remember" value={data.remember} onChange={handleData}/>
+                <button disabled = {!data.username || !data.password} onClick={handleLogin}>Login</button>
             </form>
         </div>
     )
