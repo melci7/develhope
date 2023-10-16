@@ -21,7 +21,8 @@ function Login() {
             }
         })
     }
-    function handleLogin(event) {
+    function onLogin(event) {
+        // Using this can prevent the default behavior
         event.preventDefault()
     }
 
@@ -34,12 +35,12 @@ function Login() {
     }
     return (
         <div>
-            <form>
+            <form onSubmit={onLogin}>
                 <input type="text" name="username" value={data.username} onChange={handleData}/>
                 <input type="password" name="password" value={data.password} onChange={handleData}/>
                 <input type="checkbox" name="remember" value={data.remember} onChange={handleData}/>
-                <button disabled = {!data.username || !data.password} onClick={handleLogin}>Login</button>
-                <button onClick={handleReset}>Reset</button>
+                <button disabled = {!data.username || !data.password}>Login</button>
+                <button onClick={handleReset} type="reset">Reset</button>
             </form>
         </div>
     )
