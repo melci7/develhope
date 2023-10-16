@@ -21,9 +21,16 @@ function Login() {
             }
         })
     }
-    // I didn't understand the "When clicked, the event handler attached to the button should call an onLogin function passed as a prop to the Login component, passing it the state."
     function handleLogin(event) {
         event.preventDefault()
+    }
+
+    function handleReset() {
+        setData({
+            username: '',
+            password: '',
+            remember: 'false'
+        })
     }
     return (
         <div>
@@ -32,6 +39,7 @@ function Login() {
                 <input type="password" name="password" value={data.password} onChange={handleData}/>
                 <input type="checkbox" name="remember" value={data.remember} onChange={handleData}/>
                 <button disabled = {!data.username || !data.password} onClick={handleLogin}>Login</button>
+                <button onClick={handleReset}>Reset</button>
             </form>
         </div>
     )
