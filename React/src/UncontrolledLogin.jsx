@@ -4,15 +4,13 @@ function UncontrolledLogin() {
 
     function handleData(event) {
         event.preventDefault()
-
-        const username = event.target.elements.namedItem("username").value;
-        const password = event.target.elements.namedItem("password").value;
-        const remember = event.target.elements.namedItem("remember").checked;
+        // FormData is more simple usage
+        const formData = new FormData(event.target)
 
         const data = {
-            username,
-            password,
-            remember
+            username: formData.get("username"),
+            password: formData.get("password"),
+            remember: formData.get("remember") === 'on' ? true : false,
         }
 
         console.log(data)
