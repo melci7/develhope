@@ -12,7 +12,12 @@ import { Colors } from "./Colors";
 function App() {
 
     return (
-        <Colors items={["Red", "Blue", "Gray", "Black", "Yellow"]}/>
+        <Colors items={[
+          {name: "Muhammed", id: 1},
+          {name: "Kemal", id: 2},
+          {name: "Emre", id: 3},
+          {name: "Kaan", id: 4}
+        ]}/>
     )
     
   }
