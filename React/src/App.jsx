@@ -7,13 +7,12 @@ import MouseClicker from "./MouseClicker"
 import MultiButton from "./MultiButton"
 import UncontrolledLogin from "./UncontrolledLogin"
 import Welcome from "./Welcome"
+import { Colors } from "./Colors";
 
 function App() {
 
     return (
-      <React.StrictMode>
-        <FocusableInput />
-      </React.StrictMode>
+        <Colors items={["Red", "Blue", "Gray", "Black", "Yellow"]}/>
     )
     
   }
