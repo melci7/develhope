@@ -1,4 +1,5 @@
 import AlertClock from "./AlertClock"
+import { FocusableInput } from "./FocusableInput"
 import InteractiveWelcome from "./InteractiveWelcome"
 import Login from "./Login"
 import MouseClicker from "./MouseClicker"
@@ -10,7 +11,7 @@ function App() {
 
     return (
       <>
-        <UncontrolledLogin />
+        <FocusableInput />
       </>
     )
     
