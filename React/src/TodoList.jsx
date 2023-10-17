@@ -1,17 +1,18 @@
-import { useState } from "react";
+import { useRef, useState } from "react";
 
 export function TodoList() {
     const [items, setItems] = useState(["Study", "Read"]);
-
+    const inputRef = useRef(null);
     function handleAddTask(event) {
         event.preventDefault();
         const todo = event.target.elements.namedItem("todo").value;
         setItems([...items, todo]);
+        inputRef.current.value = "";
     }
     return (
         <div>
             <form onSubmit={handleAddTask}>
-                <input type="text" name="todo" placeholder="To do"/>
+                <input ref={inputRef} type="text" name="todo" placeholder="To do"/>
                 <button>Add Task</button>
             </form>
             
