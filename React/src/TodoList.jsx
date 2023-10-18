@@ -13,6 +13,12 @@ export function TodoList() {
         event.preventDefault();
         setItems([]);
     }
+
+    function removeItem(index) {
+        const newArray = [...items];
+        newArray.splice(index, 1);
+        setItems(newArray);
+    }
     return (
         <div>
             <form onSubmit={handleAddTask}>
@@ -22,7 +28,7 @@ export function TodoList() {
             </form>
             
             <ul>
-                {items.map((item, index) => (<li key={index}>{item}</li>))}
+                {items.map((item, index) => (<li key={index}>{item} <button onClick={() => removeItem(index)}>Remove</button></li>))}
             </ul>
         </div>
     )
