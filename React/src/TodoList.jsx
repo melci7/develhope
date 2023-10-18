@@ -9,11 +9,16 @@ export function TodoList() {
         setItems([...items, todo]);
         inputRef.current.value = "";
     }
+    function resetTask(event) {
+        event.preventDefault();
+        setItems([]);
+    }
     return (
         <div>
             <form onSubmit={handleAddTask}>
                 <input ref={inputRef} type="text" name="todo" placeholder="To do"/>
                 <button>Add Task</button>
+                <button type="reset" onClick={resetTask}>Reset</button>
             </form>
             
             <ul>
