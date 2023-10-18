@@ -9,11 +9,12 @@ import UncontrolledLogin from "./UncontrolledLogin"
 import Welcome from "./Welcome"
 import { Colors } from "./Colors";
 import { TodoList } from "./TodoList";
+import Counter from "./Counter";
 
 function App() {
 
     return (
-        <Welcome/>
+        <Counter/>
     )
     
   }
