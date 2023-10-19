@@ -10,11 +10,12 @@ import Welcome from "./Welcome"
 import { Colors } from "./Colors";
 import { TodoList } from "./TodoList";
 import Counter from "./Counter";
+import Clock from "./Clock";
 
 function App() {
 
     return (
-        <Login />
+        <Clock />
     )
     
   }
