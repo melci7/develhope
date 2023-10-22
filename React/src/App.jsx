@@ -16,7 +16,9 @@ import { Container } from "./Container";
 function App() {
 
     return (
-        <Container title={<h2>My first title</h2>} />
+        <Container title={<h2>My first title</h2>}>
+          <TodoList />
+        </Container>
     )
     
   }
