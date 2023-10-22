@@ -11,11 +11,12 @@ import { Colors } from "./Colors";
 import { TodoList } from "./TodoList";
 import Counter from "./Counter";
 import Clock from "./Clock";
+import { Container } from "./Container";
 
 function App() {
 
     return (
-        <TodoList />
+        <Container children={<h2>My first children</h2>} />
     )
     
   }
