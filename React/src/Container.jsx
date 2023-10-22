@@ -1,7 +1,11 @@
 import classes from './Clock.module.scss';
 
-export function Container( {children} ) {
+export function Container( {title, children} ) {
     return (
-        <div className={classes.children}>{children}</div>
+        <div>
+            <div className={classes.children}>{children}</div>
+            <div className={classes.title}>{title}</div>
+        </div>
+        
     )
 }

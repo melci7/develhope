@@ -16,7 +16,7 @@ import { Container } from "./Container";
 function App() {
 
     return (
-        <Container children={<h2>My first children</h2>} />
+        <Container title={<h2>My first title</h2>} />
     )
     
   }
