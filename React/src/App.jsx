@@ -11,11 +11,12 @@ import { Colors } from "./Colors";
 import { TodoList } from "./TodoList";
 import Counter from "./Counter";
 import Clock from "./Clock";
+import GithubUser from "./GithubUser";
 
 function App() {
 
     return (
-        <TodoList />
+        <GithubUser username={"melci7"}/>
     )
     
   }

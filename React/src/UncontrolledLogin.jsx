@@ -1,4 +1,3 @@
-import { useState } from "react";
 
 function UncontrolledLogin() {
 
@@ -17,12 +16,12 @@ function UncontrolledLogin() {
     }
     return (
         <div>
-            <form onSubmit={handleData}>
-                <input type="text" name="username"/>
-                <input type="password" name="password"/>
-                <input type="checkbox" name="remember"/>
-                <button>Login</button>
-                <button type="reset">Reset</button>
+            <form onSubmit={handleData} className="p-4">
+                <input className='border border-gray-300 rounded-md px-4 py-2 w-64' type="text" name="username"/>
+                <input className="border border-gray-300 rounded-md px-4 py-2 w-64" type="password" name="password"/>
+                <input className="border border-gray-300 rounded-md px-4 py-2 w-64" type="checkbox" name="remember"/>
+                <button className="bg-blue-500 hover:bg-blue-600 text-white rounded-md px-4 py-2 ml-2" >Login</button>
+                <button className="bg-blue-500 hover:bg-blue-600 text-white rounded-md px-4 py-2 ml-2" type="reset">Reset</button>
             </form>
         </div>
     )
