@@ -12,11 +12,12 @@ import { TodoList } from "./TodoList";
 import Counter from "./Counter";
 import Clock from "./Clock";
 import GithubUser from "./GithubUser";
+import GithubUsers from "./GithubUsers";
 
 function App() {
 
     return (
-        <GithubUser username={"melci7"}/>
+        <GithubUsers/>
     )
     
   }
